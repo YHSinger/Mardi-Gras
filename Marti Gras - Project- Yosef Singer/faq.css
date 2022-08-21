@@ -1,0 +1,216 @@
+body {
+  background: -webkit-linear-gradient(right, #8cbf3f, #f2cc0f, #9453A6, #8cbf3f,#f2cc0f, #9453A6);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* FAQ accordian*/
+.accordion {
+  background: -webkit-linear-gradient(right, #8cbf3f, #f2cc0f, #9453A6, #8cbf3f,#f2cc0f, #9453A6);
+  color: #0d0d0d;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-family: 'Pattaya';
+}
+
+.active, .accordion:hover {
+  background-color: #0d0d0d;
+}
+
+.panel {
+  padding: 0 18px;
+  background: -webkit-linear-gradient(right, #8cbf3f, #f2cc0f, #9453A6, #8cbf3f,#f2cc0f, #9453A6);
+  display: none;
+  overflow: hidden;
+  font-family: 'Roboto';
+}
+p{
+  font-family: 'Roboto';
+  font-size: 22px;
+}
+
+/* NavBar*/
+
+.topnav {
+  background: -webkit-linear-gradient(right, #8cbf3f,#f2cc0f, #9453A6, #8cbf3f, #f2cc0f,#9453A6);;
+  overflow: hidden;
+  max-width: 100vw;
+  max-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.topnav a {
+  float: left ;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 27px;
+  font-family: 'Henny Penny';
+}
+.topnav a:hover {
+  background-color: #f2cc0f;
+  color: #8cbf3f;
+}
+
+.topnav a.active {
+  background-color: #9453A6;
+  color: #0d0d0d;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+.logo{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+
+}
+ 
+/* footer */
+
+footer{
+    left: 0;
+    right: 0;
+    background: #111;
+    width: 100vw;
+    padding-top: 40px;
+    color: #fff;
+    /* position: absolute; */
+    bottom: 0;
+    width: 100%;
+   height: 1.8rem;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    max-height: 75px;
+    background: #111;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-content p{
+    max-width: 500px;
+    max-height: 100px;
+    margin: 10px auto;
+    line-height: 14px;
+    font-size: 14px;
+    color: #cacdd2;
+    align-items: center;
+    justify-content: center;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem 0 0rem 0;
+    padding:0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #fff;
+    border: 1.1px solid #f2f2f2;
+    padding: 5px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials a i{
+    font-size: 1.1rem;
+    width: 20px;
+    transition: color .4s ease;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials a:hover i{
+    color: aqua;
+}
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+.footer-bottom p{
+   float: left;
+   font-size: 14px;
+   word-spacing: 2px;
+   text-transform: capitalize;
+}
+.footer-bottom p a{
+  color:#44bae8;
+  font-size: 16px;
+  text-decoration: none;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+@media (max-width:500px) {
+.footer-menu ul{
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+}
+/* trivia button*/
+button{
+  background-color: #9453A6;
+   font-size: 22px;
+  font-family: 'Henny Penny';
+  border-radius: 50px;
+  padding: 10px;
+}
